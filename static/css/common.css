@@ -1,0 +1,36 @@
+/* 全局css */
+.bg_1{
+	background: c
+}
+
+.c_1{
+	color: #FE3F80;
+}
+
+.df{
+	display: flex;
+}
+.f1{
+	flex: 1;
+}
+.f2{
+	flex: 2;
+}
+.f4{
+	flex: 4;
+}
+.f6{
+	flex: 6;
+}
+.f8{
+	flex: 8;
+}
+.f10{
+	flex: 10;
+}
+.f12{
+	flex: 12;
+}
+.h90upx{
+	height: 90upx;
+}
