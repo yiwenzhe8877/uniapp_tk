@@ -59,14 +59,7 @@
 .hide{
 	display: none;
 }
-.btn_1{
-	width: 700upx;
-	height: 80upx;
-	line-height: 80upx;
-	margin: 0 auto;
-	text-align: center;
-	color: white;
-}
+
 .bg_main{
 	background: #F24439;
 }
@@ -80,25 +73,57 @@
 	background: #56d176;
 }
 
+.bg_sub_pink{
+	background: #ff8080;
+}
+
+.bg_sub_grey{
+	background: #efeff4;
+}
+
+.c_title{
+	color: #333;
+}
+.c_content{
+	color: #666;
+}
+.c_comment{
+	color: #999;
+}
+.c_sub{
+	color: #ccc;
+}
+.border_bottom{
+	border-bottom: 1px solid #e5e5e5;
+}
+
+
+.ml10{
+	margin-left: 18upx;
+}
+.ml20{
+	margin-left: 36upx;
+}
+.mt10{
+	margin-top: 18upx;
+}
 
 
 .fz_1{
-	font-size:24upx
+	font-size: 30upx;
+	line-height: 45upx;
 }
 .fz_2{
-	font-size:28upx
-}
-.fz_3{
-	font-size: 30upx;
-}
-.fz_4{
 	font-size: 36upx;
 }
-.fz_5{
+.fz_3{
 	font-size: 42upx;
 }
-.fz_6{
+.fz_4{
 	font-size: 48upx;
+}
+.fz_5{
+	font-size: 60upx;
 }
 
 .fz_header{
@@ -108,9 +133,4 @@
 
 
 
-.border_grey{
-	border-bottom: 1px solid #C3C3C3;
-}
-.bg_grey{
-	background: #f2f2f2;
-}
+

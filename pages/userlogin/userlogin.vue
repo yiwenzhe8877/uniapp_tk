@@ -9,16 +9,16 @@
 		
 		<btn_1 :title='submit_txt' @submit='submit'></btn_1>
 		
-		<view class="df b1">
+		<view class="df b1 mt10">
 			<view class="f1 tal ">
-				<text class="register c_black">注册</text>
+				<text class="register c_black fz_1">注册</text>
 				
 			</view>
-			<view class="f1 tar c_black">
+			<view class="f1 tar c_black fz_1">
 				<text class="forget">没有密码/忘记密码</text>
 			</view>
 		</view>
-		<view class="tac b1 c_black">
+		<view class="tac b1 c_black fz_1">
 			<text>
 			登陆或注册即代表同意app的用户协议	
 			</text>
@@ -92,10 +92,11 @@
 
 <style>
 	.b1{
-		margin: 30upx;
+		margin-left: 25upx;
+		margin-right: 25upx;
 	}
 	.b1 text{
-		font-size: 30upx;
+		
 		border-bottom: 1px solid #000
 	}
 	

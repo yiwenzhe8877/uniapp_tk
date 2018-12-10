@@ -4,11 +4,11 @@
 		
 		<!-- <ipt_1 :required='false' :label='label' :placeholder='placeholder' :name='name' @iptClick='iptClick' ></ipt_1> -->
 		
-		<view class="ipt_wrap border_grey df">
+		<view class="ipt_wrap border_bottom df">
 			<text class="c_red c_black" :class="[required?'':'hide']" >*</text>
 			<label for="" class="label fz_3 c_black">{{label}}</label>
 			
-			<input :password="password"  placeholder-style="color:#989898;"  type="text" value="" @input='ipt' class="ipt fz_3 " :placeholder="placeholder" />	
+			<input :password="password"  placeholder-style="color:#989898;font-size:25upx"  type="text" value="" @input='ipt' class="ipt " :placeholder="placeholder" />	
 		</view>
 	</view>
 </template>
@@ -65,6 +65,7 @@
 	.ipt_wrap .label{
 		color: #000;
 		width: 150upx;
+		font-size: 30upx;
 		
 	}
 	.ipt_wrap .ipt{
