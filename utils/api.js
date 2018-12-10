@@ -27,6 +27,9 @@ const   req= function(url,data,method){
 	let baseurl='https://a.deyuntianxia.com/';		
 	let arr=url.split('/');
 	url='index.php?moudle='+arr[0]+'&control='+arr[1]+'&method='+arr[2]
+	
+	
+	
 	return new Promise((success,rej)=>{
 		uni.request({
 			url:baseurl+url, //仅为示例，并非真实接口地址。

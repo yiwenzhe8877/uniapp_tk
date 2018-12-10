@@ -55,7 +55,8 @@
 		},
 		onLoad() {
 			that=this;
-			this.getData();
+			this.getCarousel();
+			this.getRecommend();
 		},
 		methods:{
 			
@@ -63,14 +64,28 @@
 				console.log(e)
 			},
 			
-			getData: function (e) {
+			getCarousel: function () {
 				
 				that.$api.get('site/home/app_home_carousel').then(res=>{
 					that.pics=res.data;		
 				})
 			},
+			getRecommend: function () {
+				
+				that.$api.get('site/home/app_recommend').then(res=>{
+					//that.pics=res.data;		
+					console.log(res)
+				})
+				
+			},
 			go_goods_list: function (e) {
-				let title =e.currentTarget.dataset.title;
+				
+				
+				that.$api.get('site/home/app_recommend').then(res=>{
+					//that.pics=res.data;		
+					console.log(res)
+				})
+				
 				
 			},
 		}
