@@ -2,72 +2,74 @@
 	"pages": [
 		//pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
+			"path": "pages/tabBar/Usercenter/usercenter"
+		},
+		{
+			"path": "pages/userlogin/userlogin"	
+		},
+		{
 			"path": "pages/tabBar/Share/share"
-			
+	
 		},
 		{
 			"path": "pages/tabBar/Home/home"
-			
-		
 		},
-		
 		{
 			"path": "pages/tabBar/Money/money"
 		},
 		{
 			"path": "pages/tabBar/Search/search"
-		},
-		{
-			"path": "pages/tabBar/Usercenter/usercenter"
 		}
+		
+		
 	],
 	"subPackages": [{
 		
 	}],
 	"globalStyle": {
-// 		"navigationBarTextStyle": "black",
-// 		"navigationBarTitleText": "铃铛优惠券",
-// 		"navigationBarBackgroundColor": "#F8F8F8",
-// 		"backgroundColor": "#F8F8F8",
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "铃铛优惠券",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
 		"navigationStyle":"custom"
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#FE3F80",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/tabBar/Home/home",
+				"iconPath": "static/images/tabbar_home.png",
+				"selectedIconPath": "static/images/tabbar_home_selected.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/tabBar/Share/share",
+				"iconPath": "static/images/tabbar_share.png",
+				"selectedIconPath": "static/images/tabbar_share_selected.png",
+				"text": "一键分享"
+			},
+			{
+				"pagePath": "pages/tabBar/Money/money",
+
+				"iconPath": "static/images/tabbar_money.png",
+				"selectedIconPath": "static/images/tabbar_money_selected.png",
+				"text": "我要赚钱"
+			},
+			{
+				"pagePath": "pages/tabBar/Search/search",
+
+				"iconPath": "static/images/tabbar_search.png",
+				"selectedIconPath": "static/images/tabbar_search_selected.png",
+				"text": "找券"
+			},
+			{
+				"pagePath": "pages/tabBar/Usercenter/usercenter",
+				"iconPath": "static/images/tabbar_usercenter.png",
+				"selectedIconPath": "static/images/tabbar_usercenter_selected.png",
+				"text": "个人中心"
+			}
+		]
 	}
-// 	"tabBar": {
-// 		"color": "#7A7E83",
-// 		"selectedColor": "#FE3F80",
-// 		"borderStyle": "black",
-// 		"backgroundColor": "#ffffff",
-// 		"list": [{
-// 				"pagePath": "pages/tabBar/Home/home",
-// 				"iconPath": "static/images/tabbar_home.png",
-// 				"selectedIconPath": "static/images/tabbar_home_selected.png",
-// 				"text": "首页"
-// 			},
-// 			{
-// 				"pagePath": "pages/tabBar/Share/share",
-// 				"iconPath": "static/images/tabbar_share.png",
-// 				"selectedIconPath": "static/images/tabbar_share_selected.png",
-// 				"text": "一键分享"
-// 			},
-// 			{
-// 				"pagePath": "pages/tabBar/Money/money",
-// 
-// 				"iconPath": "static/images/tabbar_money.png",
-// 				"selectedIconPath": "static/images/tabbar_money_selected.png",
-// 				"text": "我要赚钱"
-// 			},
-// 			{
-// 				"pagePath": "pages/tabBar/Search/search",
-// 
-// 				"iconPath": "static/images/tabbar_search.png",
-// 				"selectedIconPath": "static/images/tabbar_search_selected.png",
-// 				"text": "找券"
-// 			},
-// 			{
-// 				"pagePath": "pages/tabBar/Usercenter/usercenter",
-// 				"iconPath": "static/images/tabbar_usercenter.png",
-// 				"selectedIconPath": "static/images/tabbar_usercenter_selected.png",
-// 				"text": "个人中心"
-// 			}
-// 		]
-// 	}
 }

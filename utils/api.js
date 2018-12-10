@@ -29,17 +29,26 @@ const   req= function(url,data,method){
 	url='index.php?moudle='+arr[0]+'&control='+arr[1]+'&method='+arr[2]
 	
 	
+	if(method=='GET'){
+		uni.showLoading({
+			title: '加载中'
+		});	
+	}
+	
 	return new Promise((success,rej)=>{
 		uni.request({
 			url:baseurl+url, //仅为示例，并非真实接口地址。
 			method:method,
 			header:{
-
+				'content-type':'application/x-www-form-urlencoded'
 			},
-			dataType:'json',
+			
 			data:data,
 		
 			success: (res) => {
+				
+				uni.hideLoading();
+
 				success(res.data)
 			}
 		})

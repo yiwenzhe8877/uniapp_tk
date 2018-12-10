@@ -1,6 +1,6 @@
 /* 全局css */
 .bg_1{
-	background: c
+
 }
 
 .c_1{
@@ -33,4 +33,84 @@
 }
 .h90upx{
 	height: 90upx;
+}
+
+.h80upx{
+	height: 80upx;
+}
+.h82upx{
+	height: 82upx;
+}
+.c_red{
+	color: red;
+}
+.h50upx{
+	height: 50upx;
+}
+.tac{
+	text-align: center;
+}
+.tal{
+	text-align: left;
+}
+.tar{
+	text-align: right;
+}
+.hide{
+	display: none;
+}
+.btn_1{
+	width: 700upx;
+	height: 80upx;
+	line-height: 80upx;
+	margin: 0 auto;
+	text-align: center;
+	color: white;
+}
+.bg_main{
+	background: #F24439;
+}
+.bg_sub_blue{
+	background: #2893ff;
+}
+.bg_sub_orange{
+	background: #FF973A;
+}
+.bg_sub_green{
+	background: #56d176;
+}
+
+
+
+.fz_1{
+	font-size:24upx
+}
+.fz_2{
+	font-size:28upx
+}
+.fz_3{
+	font-size: 30upx;
+}
+.fz_4{
+	font-size: 36upx;
+}
+.fz_5{
+	font-size: 42upx;
+}
+.fz_6{
+	font-size: 48upx;
+}
+
+.fz_header{
+	font-size: 67.4upx;
+}
+.c_white{color: white;}
+
+
+
+.border_grey{
+	border-bottom: 1px solid #C3C3C3;
+}
+.bg_grey{
+	background: #f2f2f2;
 }
