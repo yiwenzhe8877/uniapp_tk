@@ -27,7 +27,7 @@
 			getData: function () {
 				
 				
-				that.$api.get('site/home/app_userinfo').then(res=>{
+				that.$api.get('site/home/app_userlogin').then(res=>{
 					//that.pics=res.data;		
 					console.log(res)
 				})
