@@ -1,10 +1,10 @@
 <template>
 	<view>
-		<view class="top_header_fix border_bottom df">
+		<view class="top_header_fix bg_main border_bottom df">
 			<view class="l f2 " @click="left_click">
-				<text class="iconfont icon-fanhui " :class="[left?'':'hide']" style="font-size: 42upx;"  ></text>
+				<text class="iconfont icon-fanhui c_white" style="font-size: 36upx;" :class="[left?'':'hide']"   ></text>
 			</view>
-			<view class="m f8 tac title ">{{title}}</view>
+			<view class="m f8 tac title fz_20 c_white">{{title}}</view>
 			<view class="r f2 tar"></view>
 		</view>
 		
@@ -48,7 +48,7 @@
 		position: fixed;
 		left: 0;
 		top: 0;
-		height: 82upx;
+		height: 88upx;
 		width: 100%;
 		
 		box-sizing: border-box;
@@ -60,6 +60,6 @@
 	}
 	
 	.title{
-		line-height: 82upx;
+		line-height: 88upx;
 	}
 </style>

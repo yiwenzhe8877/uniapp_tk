@@ -1,7 +1,7 @@
 
 <template>
 	<view>
-		<view class="btn_1 bg_main fz_4" @click="btn_click">{{title}}</view>
+		<view class="btn_1 fz_4" :class="bg" @click="btn_click">{{title}}</view>
 	</view>
 </template>
 
@@ -15,6 +15,9 @@
 		props:{
 			title:{
 				type:String
+			},
+			bg:{
+				type:String
 			}
 		},
 		methods:{
@@ -27,7 +30,7 @@
 
 <style>
 .btn_1{
-	width: 700upx;
+	width: 100%;
 	height: 80upx;
 	line-height: 80upx;
 	margin: 0 auto;

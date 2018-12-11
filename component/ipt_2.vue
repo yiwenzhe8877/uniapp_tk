@@ -6,6 +6,7 @@
 		
 		<view class="ipt_wrap bg_sub_grey df">
 			<input :password="password"  placeholder-style="color:#989898;"  type="text" value="" @input='ipt' class="ipt " :placeholder="placeholder" />	
+			<view></view>
 		</view>
 	</view>
 </template>
