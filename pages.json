@@ -2,14 +2,20 @@
 	"pages": [
 		//pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
+			"path": "pages/tabBar/Usercenter/usercenter"
+		},
+		{
+			"path": "pages/changepassword/changepassword"	
+		},
+		
+		
+		{
 			"path": "pages/userregister/userregister"	
 		},
 		{
 			"path": "pages/userlogin/userlogin"	
 		},
-		{
-			"path": "pages/tabBar/Usercenter/usercenter"
-		},
+		
 		
 		{
 			"path": "pages/tabBar/Share/share"

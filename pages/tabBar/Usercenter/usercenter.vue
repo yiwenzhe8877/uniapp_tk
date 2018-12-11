@@ -1,17 +1,37 @@
 <template>
 	<view>
-		<view class="bg_main top_wrap">
+		<view class="top_wrap pl30 pr30">
 			
-			<view class="top">
-				<view class="icon">
-					<text class="iconfont icon-wode c_white"></text>
+			<view class="top df">
+				<view class='item first'>
+					<text class="iconfont icon-xiaoxi c_white fz_14" style="font-size: 50upx;"></text>
 				</view>
-				<view class="title c_white">
-					{{top_txt}}
-				</view>	
+				<view class='item'>
+					<text class="iconfont icon-shezhi c_white fz_14" style="font-size: 50upx;"></text>
+				</view>
+			</view>
+			<view class="bottom df">
+				<view class="l">
+					<view class="wrap">
+						<image src="../../../static/images/logo_512_512_1.png">
+						</image>
+					</view>
+				</view>
+				<view class="r ">
+					<view class="title fz_16">1872****323</view>
+					<view class="title fz_14 mt10 df">
+						<view class="f1">
+							邀请码 {{yaoqingma}}  
+						</view> 
+						<view class="f1 fz_14 ">
+							<view class="copy">复制</view>
+							
+						</view>
+					</view>
+					
+				</view>
 				
 			</view>
-			
 		</view>
 		
 			
@@ -26,7 +46,8 @@
 	export default {
 		data() {
 			return {
-				top_txt:"注册/登陆"
+				top_txt:"注册/登陆",
+				yaoqingma:"huhush"
 			};
 		},
 		components:{
@@ -71,18 +92,39 @@
 <style>
 	.top_wrap{
 		height: 300upx;
-		
+		background: linear-gradient(to right, #F06814 0%, #F24439 100%);
 	}
 	.top{
-		width: 400upx;
-		margin: 0 auto;	
-		text-align: center;
-		padding-top: 100upx;
+		justify-content: flex-end;
+		padding-top: 40upx;
 	}
-	.top .icon text{
-		font-size: 100upx;
+	.top .first{
+		margin-right: 30upx;
 	}
-	.top .title{
-		font-size: 30upx;
+	.bottom .l .wrap{
+		border-radius: 50%;
+		width: 150upx;
+		height: 150upx;
+		background: white;		
+	}
+	.bottom .l .wrap image{
+		width: 150upx;
+		height: 150upx;
+		border-radius: 50%;
+	}
+	.bottom .r{
+		flex: 1;
+		margin-left: 20upx;
+		margin-top: 30upx;
+		color: white;
+	}
+	.copy{
+		padding-left: 10upx;
+		padding-right: 10upx;
+		border: 1px solid #fff;
+		width: 60upx;
+		height: 40upx;
+		line-height: 40upx;
+		border-radius: 20upx;
 	}
 </style>

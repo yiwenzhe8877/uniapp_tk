@@ -1,7 +1,7 @@
 
 <template>
 	<view>
-		<view class="btn_1 fz_4" :class="bg" @click="btn_click">{{title}}</view>
+		<view class="btn_1 fz_18" :class="bg" @click="btn_click">{{title}}</view>
 	</view>
 </template>
 
@@ -36,5 +36,6 @@
 	margin: 0 auto;
 	text-align: center;
 	color: white;
+	box-shadow: 1px 1px 1px #888888;	
 }
 </style>

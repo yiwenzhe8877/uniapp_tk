@@ -15,7 +15,6 @@
 			<view class="df b1 mt10">
 				<view class="f1 tal ">
 					<text class="register c_black fz_14">注册</text>
-
 				</view>
 				<view class="f1 tar c_black fz_14">
 					<text class="forget">没有密码/忘记密码</text>

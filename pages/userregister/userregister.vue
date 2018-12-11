@@ -10,10 +10,11 @@
 			<ipt_1  :password='true'  :placeholder='pla_password' :name='name_password' @iptChange='iptChange' ></ipt_1>
 			<view class="h10"></view>
 			
-			<ipt_1  :password='true'  :placeholder='pla_code' :name='name_code' @iptChange='iptChange' ></ipt_1>
+			<ipt_2   @sendCode='sendCode'  :placeholder='pla_code' :name='name_code' @iptChange='iptChange' ></ipt_2>
+				
 			<view class="h10"></view>
 			
-			<ipt_1  :password='true'  :placeholder='pla_yaoqingma' :name='name_yaoqingma' @iptChange='iptChange' ></ipt_1>
+			<ipt_1    :placeholder='pla_yaoqingma' :name='name_yaoqingma' @iptChange='iptChange' ></ipt_1>
 			<view class="h30"></view>
 			
 			
@@ -29,6 +30,8 @@
 <script>
 	import header from '../../component/header.vue'
 	import ipt_1 from '../../component/ipt_1.vue'
+	import ipt_2 from '../../component/ipt_2.vue'
+
 	import btn_1 from '../../component/btn_1.vue'
 	
 	let that;
@@ -48,13 +51,15 @@
 				name_yaoqingma:"yaoqingma",
 				
 				submit_txt:"注册",
-				bg_color:'bg_sub_orange'
+				bg_color:'bg_sub_orange',
 			};
 		},
 		components:{
 			v_header:header,
 			ipt_1:ipt_1,
-			btn_1:btn_1
+			ipt_2:ipt_2,
+			btn_1:btn_1,
+			
 		},
 		onLoad() {
 			that=this;
@@ -63,6 +68,34 @@
 			submit(){
 					
 				that.$api.post('site/home/app_userregister',this.data1).then(res=>{
+						
+					let code =res.code;
+					let msg=res.msg
+					if(code!='0'){
+						uni.showToast({
+							title: msg,
+							duration: 2000,
+							icon:'none'
+						});	
+						return;
+					}
+					uni.showToast({
+						title: "注册成功",
+						duration: 2000,
+						icon:'none'
+					});	
+					
+				})
+			},
+			iptChange:function(arr){
+								
+				this.data1[arr[0]] = arr[1]
+			},
+			
+			sendCode:function(){
+				
+				
+				that.$api.post('site/home/app_code_register',{phone:this.data1.phone}).then(res=>{
 					//that.pics=res.data;		
 					let code =res.code;
 					let msg=res.msg
@@ -74,16 +107,7 @@
 						});	
 					}
 					
-					let token=res.token;
-					
-					uni.setStorageSync('token',token)
-					
-					
 				})
-			},
-			iptChange:function(arr){
-								
-				this.data1[arr[0]] = arr[1]
 			}
 			
 		}

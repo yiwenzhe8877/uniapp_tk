@@ -6,7 +6,7 @@
 		
 		<view class="ipt_wrap bg_sub_grey df">
 			<input :password="password"  placeholder-style="color:#989898;"  type="text" value="" @input='ipt' class="ipt " :placeholder="placeholder" />	
-			<view></view>
+			<view class="ipt_btn_1 bg_sub_orange fz_18"   @click="sendCode">{{canSendCode==true?msg:counterCount+"s"}}  </view>
 		</view>
 	</view>
 </template>
@@ -15,7 +15,9 @@
 	export default {
 		data() {
 			return {
-				
+				msg:"点击发送",
+				canSendCode:true,
+				counterCount:60
 			};
 		},
 		props:{
@@ -47,6 +49,27 @@
 				let v=e.detail.value;
 				this.$emit('iptChange',[this.name,v])	
 			},
+			sendCode:function(e){
+				let that=this;
+				let timer;
+				if(!that.canSendCode) return;
+				
+				
+				that.canSendCode=false;
+				
+				timer= setInterval(function(){
+					that.counterCount=--that.counterCount;
+					
+					//console.log(that.canSendCode)
+					if(that.counterCount==0){
+						that.canSendCode= true;
+						clearInterval(timer);
+					}
+				},1000)
+				
+				
+				this.$emit('sendCode')
+			}
 			
 		}
 	}
@@ -63,6 +86,12 @@
 		box-sizing: border-box;
 		line-height: 80upx;
 		width: 100%;
+	}
+	.ipt_btn_1{
+		width: 300upx;
+		line-height: 80upx;
+		text-align: center;
+		color: white;
 	}
 	
 </style>
